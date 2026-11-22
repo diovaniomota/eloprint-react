@@ -12,6 +12,7 @@ export default function Header() {
         <Link to="/" className="header__logo" aria-label="Eloprint - Início">
           <img src={logo1x} srcSet={`${logo1x} 1x, ${logo} 2x`} alt="Eloprint" width="167" height="98" />
         </Link>
+        <div className="header__right">
         <nav className="header__nav" aria-label="Menu principal">
           {NAV.map((item) => (
             <NavItem key={item.label} item={item} className={`header__link header__link--${item.label.split(' ')[0].toLowerCase()}`} />
@@ -20,6 +21,7 @@ export default function Header() {
         <a className="btn-yellow header__cta" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
           Faça uma cotação agora!
         </a>
+        </div>
       </div>
     </header>
   );

@@ -324,3 +324,22 @@
 
   .home-form { left: 20px; top: 1054px; }
 }
+
+/* ===== Ajustes de centralização (desktop) ===== */
+@media (min-width: 760px) {
+  /* título "a Eloprint pode fazer" centralizado numa linha, como a etiqueta "Soluções" */
+  .solucoes__title { left: 0; right: 0; top: 90px; width: auto; text-align: center; white-space: nowrap; }
+
+  /* números: 4 colunas iguais, ícone/número/legenda centralizados em cada coluna */
+  .numeros { display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; padding: 0 24px; box-sizing: border-box; }
+  .numero { display: grid; grid-template-rows: 62px auto auto; align-content: start; justify-items: center; align-items: end; text-align: center; }
+  .numero > * { position: static; }
+  .numero__n { margin-top: 0; }
+  .numero__label, .numero--d .numero__label { width: auto; white-space: nowrap; }
+
+  /* legendas embaixo de cada círculo (81% / 65% / 73%) centralizadas no círculo */
+  .outsourcing__labels li { transform: translateX(-50%); }
+  .outsourcing__labels li:nth-child(1) { left: 143px; }
+  .outsourcing__labels li:nth-child(2) { left: 284px; }
+  .outsourcing__labels li:nth-child(3) { left: 424px; }
+}

@@ -18,48 +18,50 @@
 .header__box {
   pointer-events: auto;
   position: relative;
+  display: flex;
+  align-items: center;          /* tudo centralizado na vertical */
   width: 980px;
   height: 98px;
   margin: 0 auto;
   background: var(--c-white);
 }
 .header__logo {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 167px;
-  height: 98px;
+  flex: 0 0 167px;
+  align-self: stretch;
   background: #fafafa;
 }
 .header__logo img { display: block; width: 167px; height: 98px; }
 
+/* menu + botão dividem o espaço à direita da logo com espaços iguais
+   (inclusive antes do primeiro item e depois do botão) */
+.header__right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+.header__nav { display: contents; }
+
 .header__link {
-  position: absolute;
-  top: 25px;
   font-family: var(--f-bold);
   font-size: 17px;
-  line-height: 1.41;
+  line-height: 1.2;
   color: #000;
   text-decoration: none;
   white-space: nowrap;
 }
-/* no Wix os links do menu não mudam ao passar o mouse */
 .header__link:hover { color: #000; }
-.header__link--inicio { left: 225px; width: 44px; }
-.header__link--quem { left: 317px; width: 103px; }
-/* cada item numa linha só ("Equipamentos" não quebra), espaçamento ~48px entre eles */
-.header__link--equipamentos { left: 467px; }
-.header__link--contato { left: 628px; width: 62px; }
 
 .header__cta {
-  position: absolute;
-  left: 746px;
-  top: 11px;
+  flex: 0 0 auto;
   width: 184px;
   height: 50px;
+  padding: 0;
+  text-align: center;
+  white-space: nowrap;   /* rótulo sempre numa linha, centralizado no botão */
   transition: background-color 0.2s ease, color 0.2s ease;
 }
-/* no hover o Wix escurece o botão e deixa 1px da cor do header em volta */
 .header__cta:hover { box-shadow: inset 0 0 0 1px var(--c-white); }
 
 @media (max-width: 759px) {
