@@ -44,7 +44,7 @@
   color: var(--c-white);
 }
 .footer__dev a { display: block; margin-top: 3px; width: 156px; }
-.footer__dev img { display: block; width: 156px; height: 42px; }
+.footer__dev img { display: block; width: 156px; height: 42px; object-fit: contain; }
 .footer__line {
   position: absolute;
   left: 126px;
@@ -89,5 +89,5 @@
   .footer__dev { order: 5; width: auto; margin-top: 18px; text-align: center; }
   .footer__dev p { margin-left: 0 !important; font-size: 12px; line-height: 17px; }
   .footer__dev a { width: 110px; margin: 2px auto 0; }
-  .footer__dev img { width: 110px; height: auto; }
+  .footer__dev img { width: 110px; height: 34px; }
 }

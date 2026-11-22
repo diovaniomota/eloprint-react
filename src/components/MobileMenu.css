@@ -1,7 +1,16 @@
-.mmenu__toggle, .mmenu__panel { display: none; }
+.qab { display: none; }
 
+/* medidas em "px de 320" — o layout mobile é ampliado com zoom, como no Wix */
 @media (max-width: 759px) {
-  .mmenu__toggle {
+  .qab { display: block; }
+  .qab__overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 99;
+    background: #fff;
+    opacity: 0.9;
+  }
+  .qab__toggle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -11,29 +20,49 @@
     z-index: 101;
     width: 50px;
     height: 50px;
+    padding: 0;
     border: 0;
     border-radius: 50%;
     background: var(--c-dark);
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     cursor: pointer;
   }
-  .mmenu__dots { display: flex; gap: 4px; }
-  .mmenu__dots i { width: 6px; height: 6px; border-radius: 50%; background: #fff; }
-  .mmenu__panel {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
+  .qab__dots { display: flex; gap: 4px; }
+  .qab__dots i { width: 6px; height: 6px; border-radius: 50%; background: #fff; }
+  .qab__action {
     position: fixed;
-    inset: 0;
+    right: 19px;
     z-index: 100;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     background: #fff;
-  }
-  .mmenu__link {
-    font-family: var(--f-bold);
-    font-size: 22px;
-    color: #000;
     text-decoration: none;
+  }
+  .qab__action--email { bottom: 198px; fill: rgb(190, 24, 103); }
+  .qab__action--whatsapp { bottom: 140px; fill: rgb(33, 211, 102); }
+  .qab__action--quem { bottom: 82px; fill: rgb(255, 203, 0); }
+  .qab__icon {
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
+  .qab__icon svg { position: absolute; left: 8px; top: 13.5px; width: 28px; height: 17px; }
+  .qab__label {
+    position: absolute;
+    right: 60px;
+    top: 7px;
+    height: 27px;
+    padding: 0 9px;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 0 8px rgb(204, 204, 204);
+    color: rgb(29, 45, 60);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 27px;
+    white-space: nowrap;
   }
 }

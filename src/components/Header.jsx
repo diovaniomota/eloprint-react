@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import NavItem from './NavItem.jsx';
 import { NAV, WHATSAPP_URL } from '../data/site.js';
 import logo from '../assets/img/logo-header.png';
+import logo1x from '../assets/img/logo-header@1x.png';
 import './Header.css';
 
 export default function Header() {
@@ -9,7 +10,7 @@ export default function Header() {
     <header className="header">
       <div className="header__box">
         <Link to="/" className="header__logo" aria-label="Eloprint - Início">
-          <img src={logo} alt="Eloprint" width="167" height="98" />
+          <img src={logo1x} srcSet={`${logo1x} 1x, ${logo} 2x`} alt="Eloprint" width="167" height="98" />
         </Link>
         <nav className="header__nav" aria-label="Menu principal">
           {NAV.map((item) => (

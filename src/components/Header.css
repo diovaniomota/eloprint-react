@@ -8,6 +8,13 @@
   height: 98px;
   pointer-events: none;
 }
+/* faixa da largura da tela com sombra, como no Wix (fundo transparente, só a sombra aparece) */
+.header::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
 .header__box {
   pointer-events: auto;
   position: relative;
@@ -15,7 +22,6 @@
   height: 98px;
   margin: 0 auto;
   background: var(--c-white);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
 }
 .header__logo {
   position: absolute;
@@ -29,14 +35,15 @@
 
 .header__link {
   position: absolute;
-  top: 26px;
+  top: 25px;
   font-family: var(--f-bold);
   font-size: 17px;
   line-height: 1.41;
   color: #000;
   text-decoration: none;
 }
-.header__link:hover { color: #000; opacity: 0.75; }
+/* no Wix os links do menu não mudam ao passar o mouse */
+.header__link:hover { color: #000; }
 .header__link--inicio { left: 225px; width: 44px; }
 .header__link--quem { left: 317px; width: 103px; }
 /* largura fixa como no original (o texto quebra em "Equipamento/s" no Wix) */
@@ -49,7 +56,10 @@
   top: 11px;
   width: 184px;
   height: 50px;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
+/* no hover o Wix escurece o botão e deixa 1px da cor do header em volta */
+.header__cta:hover { box-shadow: inset 0 0 0 1px var(--c-white); }
 
 @media (max-width: 759px) {
   .header { display: none; }
