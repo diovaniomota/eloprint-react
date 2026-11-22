@@ -1,0 +1,10 @@
+{
+  // Configuração de deploy no Cloudflare Workers (site estático + React Router)
+  "name": "eloprint-react",
+  "compatibility_date": "2026-11-22",
+  "assets": {
+    "directory": "./dist",
+    // devolve o index.html em rotas como /quem-somos (React Router)
+    "not_found_handling": "single-page-application"
+  }
+}
