@@ -7,7 +7,7 @@ export const MAPS_URL =
   'https://www.google.com/maps/dir//R.+Aldo+Hulse,+25+-+sala+02+-+Recife,+Tubar%C3%A3o+-+SC,+88701-470';
 export const INSTAGRAM_URL = 'https://www.instagram.com/eloprintcopiadoras/';
 export const FACEBOOK_URL = 'https://www.facebook.com/eloprintcopiadoras?_rdc=2&_rdr';
-export const DARTSOFT_URL = 'https://www.dartsoft.com.br/';
+export const DARTSOFT_URL = 'https://dartsistemas.com';
 
 export const ADDRESS = 'Rua Aldo Hulse, 25 - Sala 02 - Recife, Tubarão - SC, 88701-470';
 export const PHONES = '48 3626-8630 / 48 99696-3218';
