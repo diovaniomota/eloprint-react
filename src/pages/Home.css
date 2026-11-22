@@ -1,0 +1,326 @@
+/* ===================== DESKTOP (layout de 980px igual ao Wix) ===================== */
+
+/* HERO */
+.hero {
+  margin-top: 20px;
+  height: 676px;
+  background: #ccc8f1 url('../assets/img/hero-bg.jpg') center / cover no-repeat;
+}
+.hero__inner { height: 676px; }
+.hero__tag {
+  position: absolute;
+  left: 0;
+  top: 241px;
+  margin: 0;
+  padding-left: 12px;
+  font-size: 13px;
+  line-height: 17.94px;
+  color: var(--c-white);
+}
+.hero__title {
+  position: absolute;
+  left: 12px;
+  top: 262px;
+  margin: 0;
+  font-family: var(--f-medium);
+  font-weight: 400;
+  font-size: 75px;
+  line-height: 103.5px;
+  color: var(--c-white);
+}
+.hero__text {
+  position: absolute;
+  left: 12px;
+  top: 366px;
+  width: 522px;
+  margin: 0;
+  font-family: var(--f-medium);
+  font-size: 14px;
+  line-height: 19.32px;
+  color: var(--c-white);
+}
+.hero__btn { position: absolute; left: 12px; top: 426px; width: 193px; height: 40px; }
+
+/* SOLUÇÕES */
+.solucoes { background: var(--c-light-blue); }
+.solucoes__inner { height: 848px; }
+.solucoes__tag {
+  position: absolute;
+  left: 50%;
+  top: 44px;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 13px;
+  line-height: 17.94px;
+  color: var(--c-dark);
+  white-space: nowrap;
+}
+.solucoes__title {
+  position: absolute;
+  left: 321px;
+  top: 73px;
+  width: 245px;
+  margin: 0;
+  font-family: var(--f-bold);
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 48.3px;
+  color: var(--c-dark);
+}
+.solucoes__grid {
+  position: absolute;
+  left: 25px;
+  top: 191px;
+  display: grid;
+  grid-template-columns: repeat(3, 296px);
+  column-gap: 20.5px;
+  row-gap: 31px;
+}
+.card {
+  position: relative;
+  width: 296px;
+  height: 280px;
+  background: var(--c-white);
+}
+.card__icon {
+  position: absolute;
+  left: var(--ix);
+  top: var(--iy);
+  width: var(--iw);
+  height: var(--ih);
+}
+.card__title {
+  position: absolute;
+  left: var(--tx);
+  top: var(--ty);
+  margin: 0;
+  font-family: var(--f-bold);
+  font-weight: 400;
+  font-size: var(--ts);
+  line-height: var(--tlh);
+  color: var(--c-dark);
+  white-space: nowrap;
+}
+.card__title--black { color: #000; }
+.card__title--m { display: none; }
+.card__text {
+  position: absolute;
+  left: var(--px);
+  top: var(--py);
+  width: var(--pw);
+  margin: 0;
+  font-family: var(--f-bold);
+  font-size: 14px;
+  line-height: 18.9px;
+  color: var(--c-dark);
+}
+
+/* CLIENTES + SLIDESHOW */
+.clientes { position: relative; height: 645px; background: #fff; }
+.clientes__title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 43px;
+  margin: 0;
+  text-align: center;
+  font-family: var(--f-bold);
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 35px;
+  color: #000;
+}
+.clientes__title { z-index: 1; }
+.clientes__logos { position: absolute; left: 0; right: 0; top: 78px; }
+.clientes__slides { position: absolute; left: 0; right: 0; top: 322px; }
+
+/* OUTSOURCING */
+.outsourcing { background: var(--c-light-blue); }
+.outsourcing__inner { height: 427px; }
+.outsourcing__title {
+  position: absolute;
+  left: 94px;
+  top: 64px;
+  width: 215px;
+  margin: 0;
+  font-family: var(--f-bold);
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 42px;
+  color: #000;
+}
+.outsourcing__text {
+  position: absolute;
+  left: 94px;
+  top: 165px;
+  width: 305px;
+  margin: 0;
+  font-family: var(--f-medium);
+  font-size: 15px;
+  line-height: 26.25px;
+  color: #000;
+}
+.outsourcing__circles { position: absolute; left: 94px; top: 235px; width: 380px; height: 103px; }
+.outsourcing__labels { list-style: none; margin: 0; padding: 0; }
+.outsourcing__labels li {
+  position: absolute;
+  top: 347px;
+  font-family: var(--f-medium);
+  font-size: 12px;
+  line-height: 16.2px;
+  color: #000;
+  white-space: nowrap;
+}
+.outsourcing__labels li:nth-child(1) { left: 94px; }
+.outsourcing__labels li:nth-child(2) { left: 231px; }
+.outsourcing__labels li:nth-child(3) { left: 351px; }
+.outsourcing__photo { position: absolute; left: 483px; top: 0; width: 420px; height: 420px; }
+
+/* EQUIPAMENTOS */
+.equip { position: relative; height: 1110px; background: var(--c-white); }
+.equip__bg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5px;
+  height: 502px;
+  background: #ccc8f1 url('../assets/img/equipamentos-bg.jpg') center / cover no-repeat;
+}
+.equip__inner { height: 1110px; }
+.equip__tag {
+  position: absolute;
+  left: 50%;
+  top: 43px;
+  transform: translateX(-50%);
+  margin: 0;
+  font-size: 14px;
+  line-height: 19.32px;
+  color: var(--c-white);
+  white-space: nowrap;
+}
+.equip__title {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 80px;
+  margin: 0;
+  text-align: center;
+  font-family: var(--f-medium);
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 69px;
+  color: var(--c-white);
+}
+.equip__img { position: absolute; top: 198px; width: 166px; height: 224px; object-fit: cover; }
+.equip__img--1 { left: 147px; }
+.equip__img--2 { left: 324px; width: 167px; }
+.equip__img--3 { left: 504px; }
+.equip__img--4 { left: 681px; }
+
+/* NÚMEROS */
+.numeros {
+  position: absolute;
+  left: 152px;
+  top: 453px;
+  width: 694px;
+  height: 243px;
+  border-radius: 8px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0) 100px), var(--c-yellow);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+.numero > * { position: absolute; margin: 0; }
+.numero__n {
+  font-family: var(--f-medium);
+  font-size: 30px;
+  line-height: 41.4px;
+  color: #000;
+  white-space: nowrap;
+}
+.numero__label {
+  top: 149.5px;
+  font-family: var(--f-medium);
+  font-size: 14px;
+  line-height: 19.32px;
+  color: #000;
+  white-space: nowrap;
+}
+.numero--a .numero__icon { left: 64px; top: 50px; }
+.numero--a .numero__n { left: 56px; top: 107px; }
+.numero--a .numero__label { left: 30px; color: var(--c-dark); }
+.numero--b .numero__icon { left: 229px; top: 51px; }
+.numero--b .numero__n { left: 176px; top: 109px; }
+.numero--b .numero__label { left: 202px; }
+.numero--c .numero__icon { left: 408px; top: 51px; }
+.numero--c .numero__n { left: 384px; top: 109px; }
+.numero--c .numero__label { left: 388px; }
+.numero--d .numero__icon { left: 570px; top: 49px; }
+.numero--d .numero__n { left: 562px; top: 108px; }
+/* como no original, "Clientes ativos" quebra em duas linhas */
+.numero--d .numero__label { left: 559px; width: 55px; white-space: normal; }
+
+.home-form { position: absolute; left: 71px; top: 778px; }
+
+/* ===================== CELULAR (layout de 320px do Wix, escalado) ===================== */
+@media (max-width: 759px) {
+  .hero { margin-top: 0; height: 347px; }
+  .hero__inner { height: 347px; }
+  .hero__tag { left: 20px; top: 33px; padding-left: 15px; font-size: 15px; line-height: 20.7px; }
+  .hero__title { left: 20px; top: 68px; font-size: 49px; line-height: 67.6px; }
+  .hero__text { left: 20px; top: 137px; width: 282px; font-size: 16px; line-height: 22.08px; }
+  .hero__btn { left: 55px; top: 273px; width: 210px; height: 42px; }
+
+  .solucoes__inner { height: 1641px; }
+  .solucoes__tag { top: 20px; font-size: 15px; line-height: 20.7px; }
+  .solucoes__title { left: 0; right: 0; top: 57px; width: auto; text-align: center; font-size: 28px; line-height: 38.64px; }
+  .solucoes__grid { display: block; left: 0; top: 0; }
+  .card { position: absolute; left: var(--m-left); top: var(--m-top); width: 244px; height: var(--m-h); }
+  .card__icon { left: var(--m-ix); top: var(--m-iy); width: var(--m-iw); height: var(--m-ih); }
+  .card__title--d { display: none; }
+  .card__title--m { display: block; left: var(--m-tx); top: var(--m-ty); width: var(--m-tw); font-size: var(--m-ts); line-height: var(--m-tlh); }
+  .card__title--center { text-align: center; }
+  .card__text { left: var(--m-px); top: var(--m-py); width: var(--m-pw); font-size: 13px; line-height: 17.55px; }
+
+  .clientes { height: 339px; }
+  .clientes__title { left: 29px; right: auto; width: 262px; top: 19px; text-align: left; font-size: 19px; line-height: 26.6px; }
+  .clientes__logos { top: 59px; }
+  .clientes__slides { top: 246px; }
+
+  .outsourcing__inner { height: 538px; }
+  .outsourcing__photo { left: 22px; top: 17px; width: 274px; height: 274px; }
+  .outsourcing__circles { left: 52px; top: 302px; width: 220px; height: 60px; }
+  .outsourcing__labels li { top: 369px; white-space: normal; text-align: center; }
+  .outsourcing__labels li:nth-child(1) { left: 33px; top: 377px; width: 94px; }
+  .outsourcing__labels li:nth-child(2) { left: 136px; width: 56px; }
+  .outsourcing__labels li:nth-child(3) { left: 207px; width: 88px; }
+  .outsourcing__title { left: 40px; top: 411px; width: 160px; font-size: 21px; line-height: 29.4px; }
+  .outsourcing__text { left: 43px; top: 478px; width: 262px; font-size: 14px; line-height: 24.5px; }
+
+  .equip { height: 1525px; }
+  .equip__inner { height: 1525px; }
+  .equip__bg { top: 0; height: 495px; }
+  .equip__tag { top: 20px; font-size: 18px; line-height: 24.84px; }
+  .equip__title { top: 59px; font-size: 30px; line-height: 41.4px; }
+  .equip__img { width: 113px; height: 153px; }
+  .equip__img--1 { left: 32px; top: 123px; }
+  .equip__img--2 { left: 173px; top: 123px; width: 114px; }
+  .equip__img--3 { left: 34px; top: 300px; }
+  .equip__img--4 { left: 173px; top: 300px; }
+
+  .numeros { left: 19px; top: 513px; width: 280px; height: 495px; }
+  .numero__n { left: 116px !important; font-size: 26px; line-height: 35.88px; }
+  .numero__label { left: 117px !important; width: auto !important; font-size: 17px; line-height: 23.46px; }
+  .numero--a .numero__icon { left: 26px; top: 22px; width: 73px !important; height: 74px !important; }
+  .numero--a .numero__n { top: 21px; }
+  .numero--a .numero__label { top: 57px; }
+  .numero--b .numero__icon { left: 28px; top: 141px; width: 68px !important; height: 74px !important; }
+  .numero--b .numero__n { top: 140px; }
+  .numero--b .numero__label { top: 176px; }
+  .numero--c .numero__icon { left: 29px; top: 269px; width: 69px !important; height: 74px !important; }
+  .numero--c .numero__n { top: 268px; font-size: 27px; line-height: 37.26px; }
+  .numero--c .numero__label { top: 310px; }
+  .numero--d .numero__icon { left: 30px; top: 395px; width: 69px !important; height: 66px !important; }
+  .numero--d .numero__n { top: 394px; font-size: 27px; line-height: 37.26px; }
+  .numero--d .numero__label { top: 432px; font-size: 16px; line-height: 22.08px; white-space: nowrap; }
+
+  .home-form { left: 20px; top: 1054px; }
+}

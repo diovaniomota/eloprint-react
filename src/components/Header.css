@@ -1,0 +1,56 @@
+/* Cabeçalho (apenas desktop — no celular o site original usa o botão flutuante "...") */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: 98px;
+  pointer-events: none;
+}
+.header__box {
+  pointer-events: auto;
+  position: relative;
+  width: 980px;
+  height: 98px;
+  margin: 0 auto;
+  background: var(--c-white);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.18);
+}
+.header__logo {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 167px;
+  height: 98px;
+  background: #fafafa;
+}
+.header__logo img { display: block; width: 167px; height: 98px; }
+
+.header__link {
+  position: absolute;
+  top: 26px;
+  font-family: var(--f-bold);
+  font-size: 17px;
+  line-height: 1.41;
+  color: #000;
+  text-decoration: none;
+}
+.header__link:hover { color: #000; opacity: 0.75; }
+.header__link--inicio { left: 225px; width: 44px; }
+.header__link--quem { left: 317px; width: 103px; }
+/* largura fixa como no original (o texto quebra em "Equipamento/s" no Wix) */
+.header__link--equipamentos { left: 464px; width: 104px; word-break: break-all; }
+.header__link--contato { left: 627px; width: 62px; }
+
+.header__cta {
+  position: absolute;
+  left: 746px;
+  top: 11px;
+  width: 184px;
+  height: 50px;
+}
+
+@media (max-width: 759px) {
+  .header { display: none; }
+}

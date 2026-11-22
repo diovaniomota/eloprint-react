@@ -1,0 +1,93 @@
+.footer { background: var(--c-dark); }
+.footer__box {
+  position: relative;
+  width: 980px;
+  height: 424px;
+  margin: 0 auto;
+}
+.footer p { margin: 0; }
+.footer__info { position: absolute; left: 138px; top: 55px; width: 349px; }
+.footer__label {
+  font-family: var(--f-medium);
+  font-size: 13px;
+  line-height: 20.1px;
+  color: var(--c-white);
+}
+.footer__text {
+  margin-top: 16px !important;
+  font-family: var(--f-regular);
+  font-size: 13px;
+  line-height: 18.33px;
+  color: #9b9997;
+}
+.footer__phones {
+  margin-top: 18px !important;
+  font-family: var(--f-light);
+  font-weight: 300;
+}
+.footer__map {
+  position: absolute;
+  left: 677px;
+  top: 90px;
+  width: 158px;
+  height: 40px;
+  font-size: 15px !important;
+  letter-spacing: 0.75px !important;
+}
+.footer__logo { position: absolute; left: 138px; top: 222px; width: 315px; height: 73px; }
+.footer__dev { position: absolute; left: 671px; top: 225px; width: 160px; }
+.footer__dev p {
+  margin-left: 13px !important;
+  font-family: var(--f-medium);
+  font-size: 13px;
+  line-height: 15px;
+  color: var(--c-white);
+}
+.footer__dev a { display: block; margin-top: 3px; width: 156px; }
+.footer__dev img { display: block; width: 156px; height: 42px; }
+.footer__line {
+  position: absolute;
+  left: 126px;
+  top: 333px;
+  width: 724px;
+  margin: 0;
+  border: 0;
+  border-top: 2px solid #2a3740;
+}
+.footer__social {
+  position: absolute;
+  left: 138px;
+  top: 362px;
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer__social img { display: block; width: 20px; height: 20px; }
+
+@media (max-width: 759px) {
+  .footer__box {
+    width: auto;
+    height: auto;
+    padding: 29px 20px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__info, .footer__map, .footer__logo, .footer__dev, .footer__line, .footer__social {
+    position: static;
+  }
+  .footer__info { align-self: stretch; width: auto; padding-left: 9px; }
+  .footer__label { font-size: 16px; line-height: 24.12px; }
+  .footer__text { margin-top: 4px !important; font-size: 16px; line-height: 22.56px; }
+  .footer__phones { margin-top: 22px !important; }
+  .footer__logo { order: 1; width: 220px; height: auto; margin-top: 8px; }
+  .footer__map { order: 2; width: 240px; height: 42px; margin-top: 10px; }
+  .footer__social { order: 3; margin-top: 11px; }
+  .footer__line { order: 4; width: 100%; margin-top: 14px; }
+  .footer__dev { order: 5; width: auto; margin-top: 18px; text-align: center; }
+  .footer__dev p { margin-left: 0 !important; font-size: 12px; line-height: 17px; }
+  .footer__dev a { width: 110px; margin: 2px auto 0; }
+  .footer__dev img { width: 110px; height: auto; }
+}

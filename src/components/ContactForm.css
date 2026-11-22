@@ -1,0 +1,118 @@
+.cform {
+  position: relative;
+  width: 855px;
+  height: 283px;
+  margin: 0;
+  border-radius: 20px;
+  background: var(--c-yellow);
+}
+.cform--compact { height: 257px; }
+.cform--compact .cform__btn { top: 154px; }
+.cform__title {
+  position: absolute;
+  left: 79px;
+  top: 41px;
+  width: 300px;
+  margin: 0;
+  font-family: var(--f-medium);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--c-white);
+}
+.cform__text {
+  position: absolute;
+  left: 79px;
+  top: 157px;
+  width: 316px;
+  margin: 0;
+  font-family: var(--f-regular);
+  font-size: 20px;
+  line-height: 24px;
+  color: var(--c-white);
+}
+.cform__fields {
+  position: absolute;
+  left: 427px;
+  top: 59px;
+  display: grid;
+  grid-template-columns: 180px 180px;
+  column-gap: 20px;
+  row-gap: 12px;
+}
+.cform__input {
+  width: 180px;
+  height: 29px;
+  padding: 0 8px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background: var(--c-white);
+  font-family: var(--f-medium);
+  font-size: 13px;
+  color: rgb(29, 103, 205);
+  outline: none;
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.cform__input::placeholder { color: #000; opacity: 1; }
+.cform__input:hover, .cform__input:focus { border-color: rgb(29, 103, 205); background: rgb(242, 245, 253); }
+.cform__btn {
+  position: absolute;
+  left: 497px;
+  top: 156px;
+  width: 246px;
+  height: 43px;
+  border: 0;
+  border-radius: 10px;
+  background: var(--c-dark);
+  color: #fff;
+  font-family: var(--f-avenir);
+  font-weight: 800;
+  font-size: 16px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+.cform__btn:hover { opacity: 0.85; }
+.cform__btn:disabled { opacity: 0.7; cursor: wait; }
+.cform__ok {
+  position: absolute;
+  left: 427px;
+  top: 212px;
+  width: 380px;
+  margin: 0;
+  text-align: center;
+  font-family: var(--f-medium);
+  font-size: 14px;
+  color: var(--c-dark);
+}
+
+.cform__ok--error { color: #b00020; }
+
+@media (max-width: 759px) {
+  .cform, .cform--compact {
+    width: 280px;
+    height: auto;
+    padding: 16px 10px 32px;
+  }
+  .cform__title, .cform__text, .cform__fields, .cform__btn, .cform__ok { position: static; }
+  .cform__title {
+    width: 240px;
+    margin-left: 12px;
+    font-size: 23px;
+    line-height: 27.6px;
+  }
+  .cform__text {
+    width: 222px;
+    margin: 11px 0 0 12px;
+    font-size: 14px;
+    line-height: 16.8px;
+  }
+  .cform__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 12px;
+  }
+  .cform__input { width: 260px; height: 42px; padding: 0 9px; }
+  .cform__btn { display: block; width: 120px; height: 42px; margin: 10px auto 0; }
+  .cform__ok { width: auto; margin-top: 10px; }
+}

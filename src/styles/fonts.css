@@ -1,0 +1,5 @@
+/* Roboto (licença Apache 2.0) — os mesmos arquivos de fonte usados no site Wix */
+@font-face { font-family: 'EP Roboto Regular'; src: url('../assets/fonts/Roboto-Regular.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'EP Roboto Medium'; src: url('../assets/fonts/Roboto-Medium.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'EP Roboto Bold'; src: url('../assets/fonts/Roboto-Bold.woff2') format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'EP Roboto Light'; src: url('../assets/fonts/Roboto-Light.woff2') format('woff2'); font-weight: 300; font-display: swap; }

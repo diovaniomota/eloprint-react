@@ -1,0 +1,69 @@
+:root {
+  --c-yellow: #feb616;
+  --c-dark: #13212a;
+  --c-white: #fffefc;
+  --c-light-blue: #f3fbfe;
+  --c-green: #2a7c6f; /* cor de fundo do site no Wix */
+  --f-regular: 'EP Roboto Regular', Roboto, Arial, sans-serif;
+  --f-medium: 'EP Roboto Medium', Roboto, Arial, sans-serif;
+  --f-bold: 'EP Roboto Bold', Roboto, Arial, sans-serif;
+  /* No Wix o telefone usa "Brandon Grotesque Light" (fonte paga); aqui Roboto Light */
+  --f-light: 'EP Roboto Light', 'EP Roboto Regular', Roboto, Arial, sans-serif;
+  /* Botão "Enviar" usa Avenir no Wix: no Mac o sistema já tem Avenir */
+  --f-avenir: 'Avenir LT Std', 'Avenir Next', Avenir, 'EP Roboto Bold', Arial, sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  background: var(--c-green);
+  font-family: var(--f-regular);
+  color: var(--c-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+img { max-width: none; }
+.site { position: relative; min-width: 980px; overflow-x: hidden; padding-top: 0; }
+main { display: block; }
+
+/* Botão amarelo padrão do site */
+.btn-yellow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--c-yellow);
+  color: var(--c-white);
+  font-family: var(--f-regular);
+  font-size: 13px;
+  letter-spacing: 0.65px;
+  text-decoration: none;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.btn-yellow:hover { background: var(--c-dark); color: var(--c-white); }
+
+/* Etiqueta com barrinhas amarelas ("Soluções", "Equipamentos") */
+.tag {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  font-family: var(--f-medium);
+}
+.tag::before, .tag::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 4px;
+  height: 25px;
+  transform: translateY(-50%);
+  background: var(--c-yellow);
+}
+.tag::before { left: 0; }
+.tag::after { right: 0; }
+.tag--left::after { display: none; }
+
+.container { position: relative; width: 980px; margin: 0 auto; }
+
+@media (max-width: 759px) {
+  .site { min-width: 0; zoom: var(--mzoom, 1); }
+  .container { width: auto; }
+}
